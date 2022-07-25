@@ -1,0 +1,115 @@
+:root {
+  --primary-color: #f6d36b;
+  --primary-gradient: linear-gradient(
+    to right bottom,
+    #f6d36b,
+    #f8d56f,
+    #fad772,
+    #fbd976,
+    #fddb79,
+    #fed577,
+    #ffcf76,
+    #ffc975
+  );
+  --box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: #000;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+}
+.navbar {
+  background: var(--primary-gradient);
+  font-weight: 200;
+  height: 80px;
+  box-shadow: var(--box-shadow);
+}
+
+.main-content {
+  margin: 100px auto 0;
+  max-width: 90%;
+}
+
+.homepage-content {
+  margin: 0 auto;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+p {
+  line-height: 2;
+}
+
+.nav-link.active {
+  color: #fff !important;
+}
+
+.croissant {
+  padding: 5px;
+  background-color: var(--primary-color);
+  box-shadow: var(--box-shadow);
+}
+
+a.nav-link {
+  text-align: center;
+  border-radius: 4px;
+}
+
+@media (max-width: 575px) {
+  .nav-item {
+    border: 1px solid #fff;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .main-description {
+    flex-direction: column;
+  }
+  .col-sm-6 {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100% !important;
+  }
+}
+
+@media (min-width: 1356px) {
+  h1 {
+    display: block;
+  }
+}
+
+.links {
+  border: 2px solid var(--primary-color);
+  padding: 20px 45px;
+  font-weight: 200;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.faq-link:hover,
+.order-link:hover {
+  color: var(--primary-color);
+  background: #fff;
+}
+
+@media (max-width: 385px) {
+  .navigation-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.footer-text {
+  font-size: 0.8rem;
+}
