@@ -49,7 +49,7 @@ p {
 }
 
 .nav-link.active {
-  color: #fff !important;
+  font-weight: bolder;
 }
 
 .croissant {
